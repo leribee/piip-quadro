@@ -106,7 +106,7 @@
 
 
         .card.agent {
-            border-color: #8b0000;
+            border-color: #B37F57;
             background: linear-gradient(135deg, #ffe4e1 0%, #ffd5cc 100%);
         }
 
@@ -115,8 +115,8 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            background: #8b0000;
-            color: #fff;
+            background: #B37F57;
+            color: #000;
             padding: 5px 10px;
             font-size: 0.7em;
             font-weight: bold;
@@ -126,8 +126,33 @@
 
         .card.elite::after {
             content: 'ELITE';
+            background: #C3C3C3;
+            color: #000;
+        }
+        
+        .card.leader::after {
+            content: 'LIDER';
             background: #d4af37;
             color: #000;
+        }
+
+        .card.sib {
+            border-color: #00A76A;
+            background: linear-gradient(135deg, #E1FFF4 0%, #CCFFEC 100%);
+        }
+
+        .card.sib::after {
+            content: 'SIB';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #00A76A;
+            color: #000;
+            padding: 5px 10px;
+            font-size: 0.7em;
+            font-weight: bold;
+            transform: rotate(5deg);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .filters {
@@ -492,6 +517,7 @@
                 <button class="filter-btn active" data-filter="all" data-type="status">Todos</button>
                 <button class="filter-btn" data-filter="agent" data-type="status">Agentes</button>
                 <button class="filter-btn" data-filter="mundane" data-type="status">Mundanos</button>
+                <button class="filter-btn" data-filter="sib" data-type="status">SIB</button>
             </div>
         </div>
 
@@ -501,6 +527,7 @@
                 <button class="filter-btn active" data-filter="all" data-type="class">Todos</button>
                 <button class="filter-btn" data-filter="elite" data-type="class">Elite</button>
                 <button class="filter-btn" data-filter="comum" data-type="class">Comum</button>
+                <button class="filter-btn" data-filter="lider" data-type="class">Líder</button>
             </div>
         </div>
 
